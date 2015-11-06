@@ -1,0 +1,39 @@
+#This file contains viewpoints for the VMD viewchangerender plugin.
+#Type 'source /Users/cing/Code/PandasMD/assets/LysozymeStructure.vcr' from the VMD command window to load these viewpoints.
+
+proc viewchangerender_restore_my_state {} {
+  variable ::VCR::viewpoints
+
+  set ::VCR::viewpoints(1,3) { {{1 0 0 0.19} {0 1 0 -0.02} {0 0 1 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(2,2) { {{0.0615635 0 0 0} {0 0.0615635 0 0} {0 0 0.0615635 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(1,4) { 0 }
+  set ::VCR::viewpoints(2,3) { {{1 0 0 0.19} {0 1 0 -0.02} {0 0 1 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(2,4) { 0 }
+  set ::VCR::viewpoints(1,0) { {{0.287077 0.722666 0.628763 0} {0.721672 -0.594799 0.35413 0} {0.629903 0.352097 -0.692282 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(1,1) { {{1 0 0 0.342298} {0 1 0 -21.5455} {0 0 1 -0.531687} {0 0 0 1}} }
+  set ::VCR::viewpoints(2,0) { {{0.563568 0.801895 0.198384 0} {0.721672 -0.594799 0.35413 0} {0.401974 -0.0564082 -0.913915 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(1,2) { {{0.0615635 0 0 0} {0 0.0615635 0 0} {0 0 0.0615635 0} {0 0 0 1}} }
+  set ::VCR::viewpoints(2,1) { {{1 0 0 0.342298} {0 1 0 -21.5455} {0 0 1 -0.531687} {0 0 0 1}} }
+  set ::VCR::representations(1,3WVY_fix.pdb) [list NewCartoon_0.300000_10.000000_4.100000_0-protein-Structure-Opaque Licorice_0.300000_12.000000_12.000000-not_protein_and_not_ions_and_not_water-Name-Opaque ]
+  set ::VCR::representations(2,3WVY_fix.pdb) [list NewCartoon_0.300000_10.000000_4.100000_0-protein-Structure-Opaque Licorice_0.300000_12.000000_12.000000-not_protein_and_not_ions_and_not_water-Name-Opaque ]
+  set ::VCR::movieList "1 2 1"
+  set ::VCR::movieTimeList "0.5 0.5 0.0"
+  set ::VCR::movieTime 1.0
+  set ::VCR::movieDuration 4.00  
+  ::VCR::calctimescale 0
+  global PrevScreenSize
+  set PrevScreenSize [display get size]
+  proc RestoreScreenSize {} { global PrevScreenSize; display resize [lindex $PrevScreenSize 0] [lindex $PrevScreenSize 1] }
+  display resize 300 300
+  if { [parallel noderank] == 0 } {
+    puts "Loaded viewchangerender viewpoints file /Users/cing/Code/PandasMD/assets/LysozymeStructure.vcr "
+    puts "Note: The screen size has been changed to that stored in the viewpoints file."
+    puts "To restore it to its previous size type this into the Tcl console:\n  RestoreScreenSize"
+  }
+  return
+}
+
+
+viewchangerender_restore_my_state
+
+
