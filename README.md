@@ -11,7 +11,7 @@ In this talk, I present the use of Python and Pandas to accelerate analysis of t
 
 ### Addendum
 
-I wasn't really able to derive a real mechanistic model of sodium permeation, nor was I able to delve into the genetic diseases and drugs implications of this work. These topics will be addressed in a future notebook. Note that the full dataset presented in this talk is not distributed in assets, I'd prefer if you contacted me about accessing that.
+I wasn't really able to derive a real mechanistic model of sodium permeation, nor was I able to delve into the genetic diseases and drugs implications of this work. These topics will be addressed in a future notebook. Note that the full dataset presented in "HackingStructBiology-ProductionData.ipynb" is not distributed in assets but you can view the embedded plots. The "HackingStructBiology.ipynb" version includes a subset of production data spaced at dt=5ns, the plots just look a bit more sparse.
 
 ### Dependencies
 
