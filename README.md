@@ -1,5 +1,5 @@
-## Hacking structural biology with Python and pandas
-### Talk for PyCon Canada 2015, November 7th 2015
+## Hacking Structural Biology with Python and pandas
+### PyCon Canada 2015, November 7th 2015
 
 ### Abstract
 
@@ -11,7 +11,7 @@ In this talk, I present the use of Python and Pandas to accelerate analysis of t
 
 ### Addendum
 
-I wasn't really able to derive a real mechanistic model of sodium permeation, nor was I able to delve into the genetic diseases and drugs implications of this work. These topics will be addressed in a future notebook. Note that the full dataset presented in "HackingStructBiology-ProductionData.ipynb" is not distributed in assets but you can view the embedded plots. The "HackingStructBiology.ipynb" version includes a subset of production data spaced at dt=5ns, the plots just look a bit more sparse. Also note that the Github previews of each notebooks don't have embedded ipython widgets.
+A mechanistic model of sodium permeation will be presented in a follow-up notebook. Note that the full dataset presented in "HackingStructBiology-ProductionData.ipynb" is not distributed in assets but the embedded plots in that notebook reflect the full dataset. The "HackingStructBiology.ipynb" version of this talk references a subset of production data in assets, so all cells of the notebook will run but the plots are much more sparse. Also note that the Github previews of each notebook do not render the protein viewer widget.
 
 ### Dependencies
 
